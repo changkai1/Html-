@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+
+/*表头*/
+
+.header{height:102px;background:#e50011;padding-top:28px;}
+.top{width:960px;height:38px;/*background:pink;*/margin:0 auto;}
+.top img{float:left;}
+.top .producter{width:320px;height:30px;border:1px solid #ffffff;float:left;margin-top:2px;margin-left:158px;}
+.top .producter .product{width:87px;height:30px;float:left;}
+.top .producter .product p{font-size:12px;color:#ffffff;line-height:30px;text-indent:9px;
+                           background:url(images/探路者_09.jpg) no-repeat 78px center;}
+.top .producter form{width:233px;height:30px;float:left;}
+.top .producter form .tex{width:191px;height:30px;line-height:30px;border:0;padding-left:14px;color:#a9a9a9;font-size:12px;float:left;outline: none;background:#e50011;}
+.top .producter form .sub{width:27px;height:30px;border:0;float:left;background:url(images/探路者_06.jpg) no-repeat left center;outline: none;}
+.top ul{float:left;width:287px;height:15px;margin-left:15px;/*margin-top:10px;*/}
+.top ul li{float:left;list-style:none;margin:0 9px;/*border-right:2px solid #f8efff;*/}
+.top ul li a{font-size:12px;text-decoration:none;color:#ffffff;}
+.down{width:960px;height:36px;/*background:pink;*/margin:0 auto;margin-top:27px;}
+.down ul li:first-child{width:48px;height:36px;}
+.down ul li{float:left;list-style:none;line-height:36px;width:75px;height:36px;text-align:center;}
+.down ul li a{text-decoration:none;color:#ffffff;font-size:12px;display:block;}
+.down ul li:hover{background:#ffffff;}
+.down ul li a:hover{color:#e50011;}
+.down img{float:right;margin-top:9px;}
+
+/*大图片*/
+.banner img{width:100%;display:block;}
+
+/*小图片*/
+.picture{height:180px;/*background:pink;*/}
+.picture .pic{width:910px;height:180px;/*background:blue;*/margin:0 auto;}
+.pic ul li{float:left;list-style:none;margin:50px 25px;}
+.pic ul li:nth-child(3){margin-right:46px;}
+
+/*新闻动态*/
+.big{height:344px;background:#f5f5f5;}
+.big .big1{width:960px;height:304px;background:pink;margin:0 auto;padding-top:40px;}
+.big .big1 .big2{width:960px;height:265px;background:blue;}
+.big .big1 .big2 .left{width:688px;height:265px;background:green;}
+.big .big1 .big2 .left .news{width:688px;height:44px;background:skyblue;}
+.big .big1 .big2 .left .news p:first-child{float:left;margin-left:19px;line-height:44px;color:#333333;font-size:15px;}
+.big .big1 .big2 .left .news p:last-child{float:right;margin-right:8px;line-height:44px;}
+.big .big1 .big2 .left .news p a{text-decoration:none;color:#999999;font-size:11px;}
+.big .big1 .big2 .left .red{width:668px;height:221px;}
+.big .big1 .big2 .left .red .re{width:316px;height:94px;background:orange;}
+.big .big1 .big2 .left .red .re img{float:left;}
+.big .big1 .big2 .left .red .re p{float:left;font-size:11px;color:#333333;word-break: break-word;}
+
+
+
+
+
+

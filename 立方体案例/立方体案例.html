@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin:0;padding:0;}			
+			div{width:500px;height:500px;border:3px solid red;margin:120px auto;
+			perspective:1000px; /*perspective-origin: bottom right;*/}			       
+			ul{width:300px;height:300px;margin:100px;transform-style:preserve-3d;
+			   position:relative;animation:move ;/*transform: rotateY(180deg)*/;
+			   transform-origin:center center 150px;}
+			ul li{width:300px;height:300px;list-style:none;font-size:50px;color:#fff;
+			      text-align: center;line-height:300px;position:absolute;opacity: 0.7;}
+			ul li:nth-of-type(1){background:pink;/*backface-visibility:hidden;*/}
+			ul li:nth-of-type(2){background:blue;
+								transform-origin:bottom;
+								 transform:translateY(-300px) rotateX(-90deg);}
+			ul li:nth-of-type(3){background:green;
+			                     transform-origin:left;
+			                     transform:translateX(300px) rotateY(-90deg);}
+			ul li:nth-of-type(4){background:yellow;
+								transform-origin:top;
+								transform:translateY(300px) rotateX(90deg);}
+			ul li:nth-of-type(5){background:red;
+								transform-origin:right;
+								transform:translateX(-300px) rotateY(90deg);}
+			ul li:nth-of-type(6){background:orange;
+								transform:translateZ(300px);}
+			
+			@keyframes move{
+				from{transform:rotateY(0deg);}
+				to{transform:rotateY(360deg);}
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+		</div>
+	</body>
+</html>

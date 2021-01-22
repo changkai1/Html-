@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			body{background:pink;}
+			img{display:block;}
+			div{margin:50px;width:377px;height:280px;border:3px solid  				red;position:relative;overflow:hidden;}
+			p{width:377px;height:280px;background:rgba(0,0,0,0);position:absolute;top:0;transition:1s;}
+			div:hover p{background:rgba(0,0,0,0.5);}
+			img:nth-of-type(2){position:absolute;left:-85px;top:100px;transition:1s;}
+			div:hover img:nth-of-type(2){left:148px;}
+			img:nth-of-type(3){position:absolute;right:-40px;top:121px;transition:1s;}
+			div:hover img:nth-of-type(3){right:167px;}
+			h3{font-size:18px;color:red;position:absolute;text-align:center;top:-30px;width:100%;
+			   transition:1s;}
+			div:hover h3{top:20px;}
+		</style>
+		
+	</head>
+	<body>
+		<div>
+			<img src="images/box_img2.png" />
+			<p></p>
+			<img src="images/l_o.png"/>
+			<img src="images/r_f.png"/>
+			<h3>西伯利亚狼</h3>
+		</div>
+	</body>
+</html>

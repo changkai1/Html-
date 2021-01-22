@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*第一种方法插入背景图:手机是图片整合,三角不是
+			.box{width:115px;height:30px;line-height:30px;background:url(images/icon.jpg) no-repeat 97px center;
+			     border:1px solid green;font-size:12px;color:#666666;}
+			.box span{width:10px;height:14px;display:inline-block;vertical-align: middle;
+			          background:url(images/default_icon_bg.png) no-repeat -510px -13px;
+			          margin-right: 5px;margin-left:15px;}*/
+			         
+			     /*第二种方法插入两张图片,插入完一个点逗号分开在插入另一个    */
+			.box{width:115px;height:30px;line-height:30px;border:1px solid green;font-size:12px;color:#666666;
+				  background:url(images/icon1.jpg) no-repeat 15px center,url(images/icon.jpg) no-repeat 97px center;text-indent:30px;}
+			      
+			      /*第三种方法,用before和after做,麻烦不建议
+			.box{width:115px;height:30px;line-height:30px;border:1px solid green;font-size:12px;color:#666666;position:relative;}*/
+			/*.box:before{content:url(images/icon1.jpg);float:left;margin-top:3px;}  伪元素before是,margin-top:3px; f12手动调出的*/      
+			 /*.box:before{content:url(images/icon1.jpg);position: absolute;top:-2px;}   before伪元素受行高影响 , 用定位做,top值也是f12调出来的或者算出来的,麻烦 */
+		
+		</style>
+	</head>
+	<body>
+		<!--第一种方法插入背景图:手机是图片整合,三角不是
+		<div class="box"><span></span>手机名鞋库</div>-->
+		
+		<!--第二种方法插入两张图片,插入完一个点逗号分开在插入另一个-->
+		<div class="box">手机名鞋库</div>
+		<!--第三种方法用before和after做，麻烦，不建议
+		<div class="box">手机名鞋库</div>-->
+		
+		
+		
+	</body>
+</html>

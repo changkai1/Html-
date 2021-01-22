@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding:0;}
+			/*一条边框线
+			legend{margin-left:20px;}
+			fieldset{border:0;border-top:1px solid green;}
+			.box{margin-left:50px;}*/
+			
+			/*legend水平居中*/
+			legend{margin-left:20px;}
+			fieldset{width:1000px;height:300px;border:1px solid green;margin:50px;}
+			legend{border:1px solid red;padding:0 20px;}
+			input{width:200px;height:30px;}
+			span{border:1px solid red;float:left;text-align:right;width:150px;margin-top:5px;}
+			p{margin-top:10px;}
+		</style>
+	</head>
+	<body>
+		<form>
+			<!--一条边框线
+			<fieldset>
+				<legend>我是文字</legend>
+				<fieldset class="box">
+					<legend>我是文字1</legend>
+				</fieldset>
+			</fieldset>-->
+			
+			<!--legend水平居中-->
+			<fieldset>
+				<legend>我是文字</legend>
+				<p><span>用户名</span><input type="text" /></p>
+				<p><span><label for="box">密码</label></span><input type="password" id="box"/></p>				
+			</fieldset>
+			
+			<!--label用法，插入一张图片-->
+			<!--<p><label for="box1"><img src="images/index_05.jpg"/></label><input type="text" id="box1"/></p>-->
+		
+				<!--file用法：上传文本框-->
+			<input type="file" multiple="multiple" />
+		</form>
+	</body>
+</html>
